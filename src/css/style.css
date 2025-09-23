@@ -140,6 +140,11 @@ main {
 
 /* INDEX.html */
 
+.content {
+    height: 100%;
+    width: 100%;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -179,4 +184,36 @@ main {
     z-index: 1;
     color: white;
     font-size: 1.0em;
+}
+
+.content-explicacao {
+    margin-top: 150px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-explicacao-individual {
+    height: 300px;
+    width: 300px;
+    background-color: #e3e9f7;
+    margin: 80px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+}
+
+.explicacao-individual-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explicacao-individual-texto {
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
