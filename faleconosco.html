@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- sidebar -->
     <nav id="sidebar">
         <div id="sidebar_content">
 
@@ -54,12 +54,36 @@
     
     
     </nav>
+
+    <!-- IMAGEM DE FUNDO -->
     <div class="content">
         <div class="container">
             <img src="src/imgs/pexels-jonathanborba-14263441.jpg" alt="Imagem de fundo" class="imagem-fundo">
             <div class="nome-bank">LYRA</div>
             <div class="nome-bank-ofc">BANK</div>
+                    <!-- FALE CONOSCO -->
+        <div class="faleconosco">
+            <section>
+                <h2>Fale conosco!</h2>
+                <p>Ficou com alguma duvida? Preencha esse formulario e Entraremos em contato</p>
+                <form name="frmfaleconosco" method="post" action="#">
+                    <fieldset class="faleConosco">
+                        <Legend>Dados pessoais:</Legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="txtnome" id="nome">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="txttelefone" id="telefone">
+                        <label for="email">E-mai:</label>
+                        <input type="email" name="txtemail" id="email">
+                        <legend>Assunto:</legend>
+                        <textarea name="txacomentario" id="comentario"></textarea>
+                        <button type="reset">Limpa</button><button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
         </div>
+        </div>
+
 </div>
     <script src="src/js/faleconosco.js"></script>
     <script src="src/js/navbar.js"></script>
