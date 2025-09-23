@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Document</title>
+
+    <title>Projeto Final Front-End</title>
 </head>
 <body>
-    
+    <nav id="sidebar">
+        <div id="sidebar_content">
+
+        <div id="user">
+            <i class="fa-solid fa-piggy-bank"></i>
+        </div>
+
+        <ul id="side_items">
+            <li class="side-item active">
+                <a href="index.html">
+                    <i class="fa-solid fa-building-columns"></i>
+                <span class="item-description">
+                    Inicio
+                </span>
+            </a>
+            </li>
+
+            <li class="side-item">
+                <a href="sobre.html">
+                    <i class="fa-solid fa-users"></i>
+                <span class="item-description">
+                    Sobre nós
+                </span>
+            </a>
+            </li>
+
+            <li class="side-item">
+                <a href="faleconosco.html">
+                    <i class="fa-solid fa-comments"></i>
+                <span class="item-description">
+                    Fale conosco
+                </span>
+            </a>
+            </li>
+        </ul>
+
+        <button id="open_btn">
+            <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <h1>Projeto Final Front-End</h1>
+    </main>
+
     <script src="src/js/index.js"></script>
+    <script src="src/js/navbar.js"></script>
 </body>
 </html>
