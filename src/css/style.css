@@ -165,8 +165,8 @@ main {
 
 .nome-bank {
     position: absolute;
-    top: 0px;  /* distância do topo */
-    left: 20px; /* distância da esquerda */
+    top: 0px;  
+    left: 20px; 
     z-index: 1;
     color: white;
     font-size: 1.8em;
@@ -174,8 +174,8 @@ main {
 
 .nome-bank-ofc {
     position: absolute;
-    top: 60px;  /* distância do topo */
-    left: 20px; /* distância da esquerda */
+    top: 60px;  
+    left: 20px;
     z-index: 1;
     color: white;
     font-size: 1.0em;
