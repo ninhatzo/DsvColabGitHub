@@ -137,3 +137,46 @@ main {
 #sidebar:not(.open-sidebar) #user {
     justify-content: center;
 }
+
+/* INDEX.html */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: unset 10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+  }
+
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.nome-bank {
+    position: absolute;
+    top: 0px;  /* distância do topo */
+    left: 20px; /* distância da esquerda */
+    z-index: 1;
+    color: white;
+    font-size: 1.8em;
+}
+
+.nome-bank-ofc {
+    position: absolute;
+    top: 60px;  /* distância do topo */
+    left: 20px; /* distância da esquerda */
+    z-index: 1;
+    color: white;
+    font-size: 1.0em;
+}
