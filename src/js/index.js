@@ -1,5 +1,4 @@
 function validarSujestoes() {
-  console.log(1)
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById("email").value)) {
     abrirPopup(false, "O email inserido está inválido!")
     return false
