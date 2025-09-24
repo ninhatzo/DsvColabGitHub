@@ -5,57 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/popUp.css">
 
-    <title>Projeto Final Front-End</title>
+    <title>Lyra Bank</title>
 </head>
 <body>
     <nav id="sidebar">
         <div id="sidebar_content">
-
         <div id="user">
             <i class="fa-solid fa-piggy-bank"></i>
         </div>
-
         <ul id="side_items">
             <li class="side-item active">
                 <a href="index.html">
                     <i class="fa-solid fa-building-columns"></i>
-                <span class="item-description">
-                    Inicio
-                </span>
-            </a>
+                    <span class="item-description">
+                        Inicio
+                    </span>
+                </a>
             </li>
-
             <li class="side-item">
                 <a href="sobre.html">
                     <i class="fa-solid fa-users"></i>
-                <span class="item-description">
-                    Sobre nós
-                </span>
-            </a>
+                    <span class="item-description">
+                        Sobre nós
+                    </span>
+                </a>
             </li>
-
             <li class="side-item">
                 <a href="faleconosco.html">
                     <i class="fa-solid fa-comments"></i>
-                <span class="item-description">
-                    Fale conosco
-                </span>
-            </a>
+                    <span class="item-description">
+                        Fale conosco
+                    </span>
+                </a>
             </li>
         </ul>
-
         <button id="open_btn">
             <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
         </button>
-
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <img src="src/imgs/main-tela-home.png" alt="Imagem de fundo" class="imagem-fundo">
+            <div class="nome-bank">LYRA</div>
+            <div class="nome-bank-ofc">BANK</div>
         </div>
 
-    </nav>
+        <div class="content-explicacao">
+            <div class="content-explicacao-individual">
+                <div class="explicacao-individual-titulo">
+                    <h2>SPB</h2>
+                </div>
+                <div class="explicacao-individual-texto">
+                    <p>
+                        O Sistema de Pagamentos Brasileiro é uma estrutura regulada pelo
+                        Banco Central do Brasil que abrange entidades, operações e tecnologias 
+                        necessárias para a exeução de liquidação segura e eficiente de transações
+                        financeiras.
+                    </p>
+                </div>
+            </div>
+            <div class="content-explicacao-individual">
+                <div class="explicacao-individual-titulo">
+                    <h2>PIX</h2>
+                </div>
+                <div class="explicacao-individual-texto">
+                    <p>
+                        Pix é o pagamento instantâneo brasileiro. O meio de pagamento criado pelo 
+                        Banco Central (BC) em que os recursos são transferidos entre contas em poucos 
+                        segundos, a qualquer hora ou dia. É prático, rápido e seguro.
+                        O Pix pode ser realizado a partir de uma conta corrente, 
+                        conta poupança ou conta de pagamento pré-paga.
+                    </p>
 
-    <main>
-        <h1>Projeto Final Front-End</h1>
-    </main>
+                </div>
+            </div>
+            <div class="content-explicacao-individual">
+                <div class="explicacao-individual-titulo">
+                    <h2>BAAS</h2>
+                </div>
+                <div class="explicacao-individual-texto">
+                    BaaS (Banking as a Service) é um modelo em que empresas que não são bancos podem 
+                    oferecer serviços financeiros, como contas e cartões, usando a estrutura de bancos 
+                    autorizados, por meio de APIs. Isso permite lançar fintechs rapidamente e oferecer 
+                    produtos bancários sem precisar virar um banco.
+                </div>
+            </div>
+        </div>
+
+        <div class="content-sugestoes">
+            <div class="content-sugestoes-titulo">
+                <h2>Tem alguma ideia de melhoria? Deixa a sua sugestão</h2>
+            </div>
+            <div class="content-sugestoes-form">
+                <form id="formFaleConosco" method="POST" onsubmit="return validarSujestoes()">
+					<fieldset class="faleConosco">
+						<legend>Sugestão:</legend>
+
+						<div class="field">
+                            <input id="email" type="text" placeholder=" ">
+                            <label for="email">E-mail</label>
+                        </div>
+                        
+                        <div class="field">
+                            <input id="comentario" type="text" placeholder=" ">
+                            <label for="email">Comentário</label>
+                        </div>
+
+						<button type="reset" class="btn-limpar-sugestao">Limpar</button><button type="submit" class="btn-enviar-sugestoes">Enviar</button>
+					</fieldset>
+				</form>     
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+		<div class="popup-content">
+			<span id="fecharPopup" class="fechar">&times;</span>
+			<p id="mensagem-pop-up"></p>
+		</div>
+	</div>
 
     <script src="src/js/index.js"></script>
     <script src="src/js/navbar.js"></script>
