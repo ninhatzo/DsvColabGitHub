@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/popUp.css">
 
     <title>Lyra Bank</title>
 </head>
@@ -99,21 +100,17 @@
                 <h2>Tem alguma ideia de melhoria? Deixa a sua sujestão</h2>
             </div>
             <div class="content-sujestoes-form">
-                <form 
-                action="" 
-                id="formFaleConosco"
-                method="POST"
-                onsubmit="return validarSujestoes()">
+                <form id="formFaleConosco" method="POST" onsubmit="return validarSujestoes()">
 					<fieldset class="faleConosco">
 						<legend>Sujestão:</legend>
 
 						<div class="field">
-                            <input id="email" type="text" placeholder=" " required>
+                            <input id="email" type="text" placeholder=" ">
                             <label for="email">E-mail</label>
                         </div>
                         
                         <div class="field">
-                            <input id="comentario" type="text" placeholder=" " required>
+                            <input id="comentario" type="text" placeholder=" ">
                             <label for="email">Comentário</label>
                         </div>
 
@@ -123,6 +120,12 @@
             </div>
         </div>
     </div>
+    <div id="popup" class="popup">
+		<div class="popup-content">
+			<span id="fecharPopup" class="fechar">&times;</span>
+			<p id="mensagem-pop-up"></p>
+		</div>
+	</div>
 
     <script src="src/js/index.js"></script>
     <script src="src/js/navbar.js"></script>
