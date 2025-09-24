@@ -224,6 +224,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .content-sugestoes-titulo {
@@ -306,4 +307,12 @@ main {
 .btn-limpar-suestao:hover {
 	transition: 0.2s;
     background-color: #d50000;
+}
+
+.content-footer {
+    background-color: #4f46e5;
+	color:#ffffff;
+	text-align:center;
+	padding:10px;
+    border-radius: 3px;
 }
