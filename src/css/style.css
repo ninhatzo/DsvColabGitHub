@@ -217,3 +217,67 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.content-sujestoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content-sujestoes-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-sujestoes-form {
+    margin-top: 20px;
+}
+
+
+.faleConosco{
+	width: 350px;
+	margin: 0px auto;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.faleConosco input, .faleConosco textarea, .faleConosco select{
+	margin: 5px auto;
+	width: 100%;
+	padding: 5px 0; 
+}
+
+.faleConosco textarea {
+	height: 100px;
+	resize: none;
+}
+
+.faleConosco button{
+	width: 30%;
+	margin: 0 10%;
+    margin-bottom: 5px;
+	font-size: 16px;
+	border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.btn-enviar-sujestoes {
+    background-color: #008eb6;
+}
+
+.btn-enviar-sujestoes:hover {
+    background-color: #1174c5;
+    transition: 0.2s;
+}
+
+.btn-limpar-sujestao {
+    background-color: #b71c1c;
+}
+
+.btn-limpar-sujestao:hover {
+	transition: 0.2s;
+  background-color: #d50000;
+}

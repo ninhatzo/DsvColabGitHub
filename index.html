@@ -93,6 +93,31 @@
                 </div>
             </div>
         </div>
+
+        <div class="content-sujestoes">
+            <div class="content-sujestoes-titulo">
+                <h2>Tem alguma ideia de melhoria? Deixa a sua sujestão</h2>
+            </div>
+            <div class="content-sujestoes-form">
+                <form 
+                action="" 
+                id="formFaleConosco"
+                method="POST"
+                onsubmit="return validarSujestoes()">
+					<fieldset class="faleConosco">
+						<legend>Sujestão:</legend>
+
+						<label for="email">E-mail</label>
+						<input type="email" name="txtemail" id="email">
+						<br>
+                        <label for="comentario">Comentário</label>
+						<textarea name="txacomentario" id="comentario"></textarea>
+						<br>
+						<button type="reset" class="btn-limpar-sujestao">Limpar</button><button type="submit" class="btn-enviar-sujestoes">Enviar</button>
+					</fieldset>
+				</form>     
+            </div>
+        </div>
     </div>
 
     <script src="src/js/index.js"></script>
