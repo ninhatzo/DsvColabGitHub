@@ -10,7 +10,13 @@ function validarSujestoes() {
   }
 
   abrirPopup(true, "Sujestão enviado com sucesso!")
+  limparCampos()
   return false
+}
+
+function limparCampos() {
+  document.getElementById("comentario").value = null
+  document.getElementById("email").value = null
 }
 
 function abrirPopup(sucesso, mensagem) {
