@@ -107,12 +107,16 @@
 					<fieldset class="faleConosco">
 						<legend>Sujestão:</legend>
 
-						<label for="email">E-mail</label>
-						<input type="email" name="txtemail" id="email">
-						<br>
-                        <label for="comentario">Comentário</label>
-						<textarea name="txacomentario" id="comentario"></textarea>
-						<br>
+						<div class="field">
+                            <input id="email" type="text" placeholder=" " required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        
+                        <div class="field">
+                            <input id="comentario" type="text" placeholder=" " required>
+                            <label for="email">Comentário</label>
+                        </div>
+
 						<button type="reset" class="btn-limpar-sujestao">Limpar</button><button type="submit" class="btn-enviar-sujestoes">Enviar</button>
 					</fieldset>
 				</form>     
