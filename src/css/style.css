@@ -386,35 +386,37 @@ body {
 .content-btn-form-enviar{
     background-color: blue;
 }
+
 .content-btn-form-limpa:hover{
     background-color: rgb(255, 122, 122);
     transition: 0.3s;
 }
+
 .content-btn-form-enviar:hover{
     transition: 0.3s;
     background-color: rgb(116, 116, 252);
 }
 
 .form-fale-conosco {
-    width: 400px;
+    width: 700px;
     border-radius: 15px;
     background-color: #e3e9f7;
     z-index: 10;
     opacity: 0.9;
+    text-align: center;
+    justify-content: center;
 }
 
 .form-fale-conosco button{
     width: 100px;
     margin: 10px;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
 }
 
 .field-fale-conosco {
     position: relative;
-    margin: 16px 0;
-    width: 280px;
+    margin: 20px 0;
+    width: 670px;
     padding: 5px;
 }
 
@@ -424,7 +426,7 @@ body {
     padding: 14px 12px;
     font-size: 14px;
     border: 1px solid #000000;
-    border-radius: 8px;
+    border-radius: 5px;
     outline: none;
     background: transparent;
     transition: border-color .2s ease, box-shadow .2s ease;
