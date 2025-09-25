@@ -22,7 +22,7 @@ function faleconosco() {
     return false;
   }
 
-  abrirPopup(true, "Dnetro de alguns dias entraremos em contado. Obrigado pela preferência!")
+  abrirPopup(true, "Dentro de alguns dias entraremos em contado. Obrigado pela preferência!")
   limparCampos()
   return false
 }
