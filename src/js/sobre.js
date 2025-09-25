@@ -4,18 +4,23 @@ function validarDuvidas() {
     return false
   }
 
-  if (/^\(?[1-9]{2}\)? ?9[0-9]{4}-?[0-9]{4}$/.test(document.getElementById("fone").value)) {
+  if (!/^\(?[1-9]{2}\)? ?9[0-9]{4}-?[0-9]{4}$/.test(document.getElementById("fone").value)) {
     abrirPopup(false, "O campo Telefone está inválido!")
     return false
   };
 
-  abrirPopup(true, "Sujestão enviado com sucesso!")
+  abrirPopup(true, "Contato enviado com sucesso!")
+  limparCampos()
   return false
+}
+
+function limparCampos() {
+  document.getElementById("fone").value = null
+  document.getElementById("email").value = null
 }
 
 function abrirPopup(sucesso, mensagem) {
   popup.style.display = "block";
-  console.log(1)
   const color = sucesso ? "#008eb6" : "#FF0000"
 
   popup.style.backgroundColor = color
