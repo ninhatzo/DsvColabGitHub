@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Document</title>
+    <title>Lyra Bank</title>
 </head>
 <body>
-    
+    <!-- sidebar -->
     <nav id="sidebar">
         <div id="sidebar_content">
 
@@ -50,7 +50,54 @@
         </button>
 
         </div>
+        
     
+    
+    </nav>
+
+    <!-- IMAGEM DE FUNDO -->
+    <div class="content">
+        <div class="container">
+            <img src="src/imgs/pexels-jonathanborba-14263441.jpg" alt="Imagem de fundo" class="imagem-fundo">
+            <div class="nome-bank">LYRA</div>
+            <div class="nome-bank-ofc">BANK</div>
+                    <!-- FALE CONOSCO -->
+                    <form class="form-fale-conosco" method="post" onsubmit="return faleconosco()">
+
+                        <div class="field-fale-conosco">
+                          <input id="nome" type="text" placeholder=" " >
+                          <label for="nome">Nome</label>
+                        </div>
+
+                        <div class="field-fale-conosco">
+                            <input id="telefone" type="text" placeholder=" " >
+                            <label for="telefone">Telefone</label>
+                          </div>
+                      
+                        <div class="field-fale-conosco">
+                          <input id="email" type="email" placeholder=" " >
+                          <label for="email">E-mail</label>
+                        </div>
+                      
+                        <div class="field-fale-conosco">
+                          <input id="mensagem" placeholder=" " >
+                          <label for="mensagem">Mensagem</label>
+                        </div>
+                        <div class="content-btn-form">
+                            <button class="content-btn-form-limpa" type="reset">Limpa</button><button class="content-btn-form-enviar" type="submit">Enviar</button>
+                        </div>
+                        
+                    
+                      </form>
+                      
+        </div>
+
+</div>
+
+<div class="content-footer">
+            <footer>Copyright &copy; LYRA BANK</footer>
+        </div>
+
     <script src="src/js/faleconosco.js"></script>
     <script src="src/js/navbar.js"></script>
 </body>
