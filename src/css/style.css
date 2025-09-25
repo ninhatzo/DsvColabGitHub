@@ -450,6 +450,80 @@ body {
     background-color: #d50000;
 }
 
+/*sobre.html*/
+
+h1 {
+     margin: 30px 0; 
+}
+.timeline-container {
+     position: relative; 
+     max-width: 1000px; 
+     margin: 0 auto; 
+     padding: 20px; 
+} 
+.timeline { 
+    display: flex; 
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    gap: 20px; 
+    padding: 20px; 
+    scroll-snap-type: x mandatory; 
+}
+.timeline::-webkit-scrollbar { 
+    display: none; 
+} 
+.item { 
+    flex: 0 0 250px; 
+    height: 220px; 
+    /*background: #f9f9f9;*/ 
+    border-radius: 10px; 
+    padding: 20px; 
+    /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/ 
+    text-align: center; 
+    scroll-snap-align: start; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+} 
+.item h2 { 
+    margin: 0; 
+    font-size: 40px; 
+    color: #1a1a66; 
+} 
+.item h3 {
+
+    margin: 20px 0 5px; 
+    font-size: 15px; 
+    font-weight: bold; 
+} 
+.item p { 
+    font-size: 13px; 
+    color: #333; 
+} 
+ /*Botões fixos*/  
+.btn {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: #1a1a66; 
+    color: #fff; 
+    border: none; 
+    font-size: 24px; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    padding: 10px; 
+    transition: background 0.3s; 
+    z-index: 10; 
+} 
+.btn:hover { 
+    background: #4d4dd1; 
+} 
+.prev { 
+    left: -15px; 
+} 
+.next { 
+    right: -15px; 
+=======
 .content-footer {
     background-color: #4f46e5;
 	color:#ffffff;
