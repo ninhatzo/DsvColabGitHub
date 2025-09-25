@@ -52,93 +52,102 @@
         </div>
     </nav>
 
-    <section class="timeline-container">
-
-        <h1>A história da Lyra Bank</h1>
-
-        <button class="btn prev" onclick="document.querySelector('.timeline').scrollBy({left:-270,behavior:'smooth'})">&#10094;</button>
-
-        <div class="timeline" id="timeline">
-
-            <div class="item">
-                <h2>/ 2015</h2>
-                <h3>Fundação da startup</h3>
-                <p>Um grupo de jovens empreendedores cria o NeoBank+, com o objetivo de simplificar o acesso a serviços financeiros por meio de um aplicativo 100% digital.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2016</h2>
-                <h3>Primeiro cartão digital</h3>
-                <p>Lançamento do cartão de débito virtual, permitindo compras online sem a necessidade de cartão físico.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2017</h2>
-                <h3>Expansão de clientes</h3>
-                <p>O banco atinge a marca de 500 mil usuários e recebe seu primeiro aporte de investidores internacionais.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2018</h2>
-                <h3>Conta internacional</h3>
-                <p>Lançamento da conta em dólar e euro, permitindo transferências rápidas e baratas para o exterior.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2019</h2>
-                <h3>Crédito pessoal</h3>
-                <p>Inclusão da opção de empréstimos e crédito pessoal direto pelo aplicativo, sem burocracia.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2020</h2>
-                <h3>Pagamentos instantâneos</h3>
-                <p>Adaptação ao PIX, tornando-se um dos bancos digitais mais usados no país.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2022</h2>
-                <h3>Expansão para América Latina</h3>
-                <p>O NeoBank+ chega a países como Argentina, Chile e México, oferecendo serviços em moeda local.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2023</h2>
-                <h3>Investimentos no app</h3>
-                <p>Criação de uma área de investimentos simplificados, permitindo aplicar em renda fixa e fundos com poucos cliques.</p>
-            </div>
-
-            <div class="item">
-                <h2>/ 2025</h2>
-                <h3>Sustentabilidade e inovação</h3>
-                <p>Lançamento de cartões recicláveis e emissão zero de carbono, além da integração de IA para suporte 24h.</p>
-            </div>
+    <div class="content">
+        <div class="container">
+            <img src="src/imgs/pexels-shvets-production-7194010.jpg" alt="Imagem de fundo" class="imagem-fundo">
+            <div class="nome-bank">LYRA</div>
+            <div class="nome-bank-ofc">BANK</div>
         </div>
-        <button class="btn next" onclick="document.querySelector('.timeline').scrollBy({left:270,behavior:'smooth'})">&#10095;</button>
-    </section>
-    <div class="content-sugestoes">
-        <div class="content-sugestoes-titulo">
-            <h2>Ficou com alguma duvida sobre nós?</h2>
-        </div>
-        <div class="content-sugestoes-form">
 
-            <form id="formFaleConosco" method="POST" onsubmit="return validarSujestoes()">
-				<fieldset class="faleConosco">						
-                    <legend>Entre em contato:</legend>
-					<div class="field">
-                        <input id="email" type="text" placeholder=" ">
-                        <label for="email">E-mail</label>
-                      </div>
-                        
-                    <div class="field">
-                        <input id="comentario" type="text" placeholder=" ">
-                        <label for="email">Comentário</label>
-                    </div>
+        <section class="timeline-container">
 
-					<button type="reset" class="btn-limpar-sugestao">Limpar</button><button type="submit" class="btn-enviar-sugestoes">Enviar</button>
-				</fieldset>
-			</form>     
-        </div>
+            <h1>A história da Lyra Bank</h1>
+
+            <button class="btn prev" onclick="document.querySelector('.timeline').scrollBy({left:-270,behavior:'smooth'})">&#10094;</button>
+
+            <div class="timeline" id="timeline">
+
+                <div class="item">
+                    <h2>/ 2015</h2>
+                    <h3>Fundação da startup</h3>
+                    <p>Um grupo de jovens empreendedores cria a Lyra Bank , com o objetivo de simplificar o acesso a serviços financeiros por meio de um aplicativo 100% digital.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2016</h2>
+                    <h3>Primeiro cartão digital</h3>
+                    <p>Lançamento do cartão de débito virtual, permitindo compras online sem a necessidade de cartão físico.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2017</h2>
+                    <h3>Expansão de clientes</h3>
+                    <p>O banco atinge a marca de 500 mil usuários e recebe seu primeiro aporte de investidores internacionais.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2018</h2>
+                    <h3>Conta internacional</h3>
+                    <p>Lançamento da conta em dólar e euro, permitindo transferências rápidas e baratas para o exterior.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2019</h2>
+                    <h3>Crédito pessoal</h3>
+                    <p>Inclusão da opção de empréstimos e crédito pessoal direto pelo aplicativo, sem burocracia.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2020</h2>
+                    <h3>Pagamentos instantâneos</h3>
+                    <p>Adaptação ao PIX, tornando-se um dos bancos digitais mais usados no país.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2022</h2>
+                    <h3>Expansão para América Latina</h3>
+                    <p>A Lyra Bank chega a países como Argentina, Chile e México, oferecendo serviços em moeda local.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2023</h2>
+                    <h3>Investimentos no app</h3>
+                    <p>Criação de uma área de investimentos simplificados, permitindo aplicar em renda fixa e fundos com poucos cliques.</p>
+                </div>
+
+                <div class="item">
+                    <h2>/ 2025</h2>
+                    <h3>Sustentabilidade e inovação</h3>
+                    <p>Lançamento de cartões recicláveis e emissão zero de carbono, além da integração de IA para suporte 24h.</p>
+                </div>
+            </div>
+
+             <button class="btn next" onclick="document.querySelector('.timeline').scrollBy({left:270,behavior:'smooth'})">&#10095;</button>
+        </section>
+    
+        <div class="content-sugestoes">
+            <div class="content-sugestoes-titulo">
+                <h2>Ficou com alguma duvida sobre nós?</h2>
+            </div>
+            <div class="content-sugestoes-form">
+
+                <form id="formFaleConosco" method="POST" onsubmit="return validarSujestoes()">
+                    <fieldset class="faleConosco">						
+                        <legend>Entre em contato:</legend>
+                        <div class="field">
+                            <input id="email" type="text" placeholder=" ">
+                            <label for="email">E-mail</label>
+                        </div>
+                            
+                        <div class="field">
+                            <input id="comentario" type="text" placeholder=" ">
+                            <label for="email">Comentário</label>
+                        </div>
+
+                        <button type="reset" class="btn-limpar-sugestao">Limpar</button><button type="submit" class="btn-enviar-sugestoes">Enviar</button>
+                    </fieldset>
+                </form>     
+            </div>
     </div>
     <div id="popup" class="popup">
 		<div class="popup-content">
