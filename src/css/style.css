@@ -7,15 +7,28 @@
     font-family: 'poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     display: flex;
     min-height: 100vh;
     background-color: #ffffff;
 }
 
-main {
-    padding: 20px;
-}
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #e3e9f7;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4f46e5; 
+    border-radius: 100px;
+  }
 
 #sidebar {
     display: flex;
@@ -24,10 +37,10 @@ main {
     background-color: #e3e9f7;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed;
     transition: all .5s;
     min-width: 82px;
-    z-index: 9;
+    z-index: 10;
 }
 
 #sidebar_content {
@@ -68,7 +81,7 @@ main {
 }
 
 .side-item:hover:not(.active) {
-    background-color: #e3e9f7;
+    background-color: #4e46e569;
 }
 
 .side-item a {
@@ -93,12 +106,12 @@ main {
 #open_btn {
     position: absolute;
     top: 30px;
-    right: -10px;
+    right: -15px;
     background-color: #4f46e5;
     color: #e3e9f7;
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: none;
     cursor: pointer;
 }
@@ -121,12 +134,16 @@ main {
     height: 0px;
 }
 
-#sidebar.open-sidebar {
-    min-width: 15%;
+#sidebar.open-sidebar ~ .content .container .nome-bank {
+    left: 13%;
+}
+
+#sidebar.open-sidebar ~ .content .container .nome-bank-ofc {
+    left: 13%;
 }
 
 #sidebar.open-sidebar .item-description {
-    width: 170px;
+    width: 100px;
     height: auto;
 }
 
@@ -139,14 +156,15 @@ main {
     justify-content: center;
 }
 
-/* FALE CONOSCO */
+/* INDEX.html */
 .content {
     height: 100%;
     width: 100%;
 }
 
 .container {
-    position: relative;
+    position: absolute;
+    left: 0;
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -161,98 +179,210 @@ main {
 
 .imagem-fundo {
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 145vh;
     object-fit: cover;
     z-index: 0;
 }
 
 .nome-bank {
     position: absolute;
-    top: 0px;  
-    left: 20px; 
+    top: 15px;  
+    left: 100px; 
     z-index: 1;
     color: white;
-    font-size: 1.8em;
+    font-size: 2.0em;
+    z-index: 4;
+    transition: left 0.5s ease;
 }
 
 .nome-bank-ofc {
     position: absolute;
-    top: 60px;  
-    left: 20px;
+    top: 75px;  
+    left: 102px;
     z-index: 1;
     color: white;
-    font-size: 1.0em;
+    font-size: 1.1em;
+    z-index: 4;
+    transition: left 0.5s ease;
 }
+
+.content-explicacao {
+    margin-top: 115vh;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 4;
+}
+
+.content-explicacao-individual {
+    height: 260px;
+    width: 700px;
+    margin: 45px;
+    z-index: 4;
+    padding: 10px;
+}
+
+.explicacao-individual-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    font-size: 50px;
+    color: #2f26d8;
+    padding: 10px;
+}
+
+.fa-coins, .fa-pix, .fa-connectdevelop {
+    text-shadow: 0px 0px 3px rgba(93, 49, 54, 0.534);
+}
+
+.fa-coins:hover, .fa-pix:hover, .fa-connectdevelop:hover {
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
+} 
+
+.explicacao-individual-texto {
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+    padding: 10px;
+}
+
+.content-sugestoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    z-index: 4;
+}
+
+.content-sugestoes-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    font-size: 40px;
+    font-family: 'poppins', sans-serif;
+    color: #0f0a72;
+}
+
+.content-sugestoes-form {
+    margin-top: 60px;
+    z-index: 4;
+}
+
 .field {
     position: relative;
     margin: 16px 0;
-    width: 280px;
-    padding: 5px;
+    width: 1000px;
+    padding: 20px;
+    z-index: 4;
+    justify-content: center;
+    text-align: center;
 }
 
 .field input {
-    width: 100%;
+    width: 50%;
     height: 5px;
-    padding: 14px 12px;
+    padding: 15px 10px;
     font-size: 14px;
-    border: 1px solid #000000;
-    border-radius: 8px;
+    border: 1.5px solid #b8b6e4;
+    border-radius: 5px;
     outline: none;
     background: transparent;
     transition: border-color .2s ease, box-shadow .2s ease;
+    z-index: 4;
 }
 
 .field input:focus {
-    border-color: #03A9F4;
-    box-shadow: 0 0 0 3px rgba(3,169,244,.15);
+    border-color: #0f0a72;
+    box-shadow: 0 0 0 2px #4e46e51e;
+    z-index: 4;
 }
 
 .field label {
     position: absolute;
     top: 50%;
-    left: 12px;
-    transform: translateY(-25%);
+    margin-left: -475px;
+    transform: translateY(-50%);
     padding: 0 4px;
-    background: #e3e9f7cc;       
-    color: #000000;
+    background: #fff;       
+    color: #a3a0d6;
     font-size: 14px;
     pointer-events: none;
     transition: .18s ease;
-    opacity: 0.9;
+    background-color: transparent;
+    z-index: 4;
 }
 
 .field input:focus + label,
 .field input:not(:placeholder-shown) + label {
-    top: -8px;
+    top: 5px;
     font-size: 12px;
-    color: #03A9F4;
+    color: #0f0a72;
 }
-form{
-    width: 400px;
+
+.faleConosco {
     border-radius: 15px;
-    background-color: #e3e9f7;
-    z-index: 10;
-    opacity: 0.9;
+    background-color: #e3e9f76c;
+    border: none;
 }
-textarea{
-    width: 300px;
-    height: 150px;
-    overflow-y: auto; 
-    resize: none;
+
+.faleConosco button{
+	width: 10%;
+	margin: 0 20%;
+    margin-bottom: 5px;
+	font-size: 18px;
+	border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    z-index: 4;
 }
-form button{
-    width: 100px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+
+.btn-enviar-sugestoes {
+    background-color: #0f0a72;
+    color: #fff;
+    z-index: 4;
+    cursor: pointer;
 }
+
+.btn-enviar-sugestoes:hover {
+    background-color: #302b88;
+    transition: 0.2s;
+}
+
+.btn-limpar-sugestao {
+    background-color: rgb(150, 41, 41);
+    color: #ffffff;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.btn-limpar-sugestao:hover {
+	transition: 0.2s;
+    background-color: #d50000;
+}
+
+.content-footer {
+    background-color: #4f46e5;
+	color:#ffffff;
+	text-align:center;
+	padding:10px;
+    border-radius: 3px;
+}
+
 .content-btn-form-limpa{
     background-color: red;
-    
+
 }
 .content-btn-form-enviar{
     background-color: blue;
@@ -264,4 +394,20 @@ form button{
 .content-btn-form-enviar:hover{
     transition: 0.3s;
     background-color: rgb(116, 116, 252);
+}
+
+.form-fale-conosco {
+    width: 400px;
+    border-radius: 15px;
+    background-color: #e3e9f7;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.form-fale-conosco button{
+    width: 100px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
