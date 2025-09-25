@@ -10,44 +10,23 @@ function faleconosco(){
     const telefone = document.getElementById("telefone").value.trim();
     const email = document.getElementById("email").value.trim();
 
-    if(document.frmfaleconosco.txtnome.value=="")
-        {
-            alert("Preencha o campo Nome completo");
-            document.frmfaleconosco.txtnome.focus();
-            return false;
-        }
-        else if(document,frmfaleconosco.txtfone.value=="")
-        {
-            alert("Preencha o campo Telefone");
-            document.frmfaleconosco.txtfone.focus();
-            return false;
-        }
-        else if(document,frmfaleconosco.txtemail.value=="")
-        {
-             alert("Preencha o campo Email");
-             document.frmfaleconosco.txtemail.focus();
-             return false;
-        }
-        else
-        {
             if (!regexNome.test(nome)) {
-                alert("Nome inválido! Use apenas letras.");
+                alert("Campo nome invalido! Nome e sobrenome");
                 return false;
               }
             
               if (!regexTelefone.test(telefone)) {
-                alert("Telefone inválido! Formato: (99) 99999-9999");
+                alert("Campo telefone inválido! Formato: (99) 99999-9999");
                 return false;
               }
             
               if (!regexEmail.test(email)) {
-                alert("E-mail inválido!");
+                alert("campo E-mail inválido!");
                 return false;
               }
               else{
-                
+                alert("Obrigado pela mensagem! Entraremos em contato em 7 dias.")
             return true
 
               }
-        }
 }
