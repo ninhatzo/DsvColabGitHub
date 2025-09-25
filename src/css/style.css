@@ -204,7 +204,7 @@ html, body {
     z-index: 4;
     transition: left 0.5s ease;
 }
-
+ 
 .nome-bank-ofc {
     position: absolute;
     top: 55px;  
