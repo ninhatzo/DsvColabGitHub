@@ -260,7 +260,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 50px;
     z-index: 4;
 }
@@ -378,5 +378,4 @@ body {
 	text-align:center;
 	padding:10px;
     border-radius: 3px;
-    background-color: rgb(139, 56, 56);
 }
