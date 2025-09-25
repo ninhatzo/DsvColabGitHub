@@ -7,15 +7,15 @@
     font-family: 'poppins', sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -164,11 +164,11 @@ body {
     position: relative;
     width: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .container {
-    margin-bottom: 45px;
+    margin-bottom: 140px;
     position: relative;
     width: 100%;
     height: auto;
@@ -204,7 +204,7 @@ body {
     z-index: 4;
     transition: left 0.5s ease;
 }
-
+ 
 .nome-bank-ofc {
     position: absolute;
     top: 55px;  
@@ -454,12 +454,12 @@ body {
 }
 
 /*sobre.html*/
-
 .timeline-container h1 {
      margin: 30px 0; 
      color: #070444;
      font-size: 40px;
 }
+
 .timeline-container {
     margin-top: 730px;
     margin-left: 130px;
@@ -467,6 +467,7 @@ body {
     max-width: 173vh; 
     padding: 10px; 
 } 
+
 .timeline { 
     display: flex; 
     overflow-x: auto; 
@@ -475,9 +476,11 @@ body {
     padding: 20px; 
     scroll-snap-type: x mandatory; 
 }
+
 .timeline::-webkit-scrollbar { 
     display: none; 
 } 
+
 .item { 
     flex: 0 0 250px; 
     height: 220px; 
@@ -491,21 +494,25 @@ body {
     flex-direction: column; 
     justify-content: center; 
 } 
+
 .item h2 { 
     margin: 0; 
     font-size: 40px; 
     color: #1a1a66; 
 } 
+
 .item h3 {
 
     margin: 20px 0 5px; 
     font-size: 15px; 
     font-weight: bold; 
 } 
+
 .item p { 
     font-size: 13px; 
     color: #333; 
 } 
+
  /*Botões fixos*/  
 .btn {
     position: absolute; 
@@ -533,9 +540,11 @@ body {
 
 .content-footer {
     background-color: #4f46e5;
-	color:#ffffff;
-	text-align:center;
-	padding:10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
     border-radius: 3px;
     z-index: 5;
+    position: relative;
+    width: 100%;
 }
